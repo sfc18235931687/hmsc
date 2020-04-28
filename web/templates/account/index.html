@@ -8,8 +8,8 @@
                 <div class="form-group">
                     <select name="status" class="form-control inline">
                         <option value="-1">请选择状态</option>
-                        {% for tmp_key in status_mapping %}
-                        <option value="{{ tmp_key }}" {% if tmp_key == search_con['status']  %} selected {% endif %}>{{  status_mapping[ tmp_key ] }}</option>
+                        {% for select_key in status %}
+                        <option value="{{ select_key  }}">{{ status[select_key] }}</option>
                         {% endfor %}
                     </select>
                 </div>
