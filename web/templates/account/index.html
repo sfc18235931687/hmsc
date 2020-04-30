@@ -7,9 +7,9 @@
             <div class="row m-t p-w-m">
                 <div class="form-group">
                     <select name="status" class="form-control inline">
-                        <option value="-1">请选择状态</option>
+                        <option value="-1">请选择{{ status[select_key] }}状态</option>
                         {% for select_key in status %}
-                        <option value="{{ select_key  }}">{{ status[select_key] }}</option>
+                        <option value="{{ select_key  }}"></option>
                         {% endfor %}
                     </select>
                 </div>
